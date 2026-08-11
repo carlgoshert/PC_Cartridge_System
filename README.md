@@ -1,3 +1,4 @@
+![pcart logo](pcart_logo_white.png)
 # PCarts - The PC Cartridge System
 
 ### A media cartridge system for PC using microSD cards to physicalize your digital media collection.
@@ -14,6 +15,9 @@ You can order the PCBs online from a number of sites and even have them assemble
 I manufactured my boards with JLCPCB <https://jlcpcb.com/>, but PCBWay <https://www.pcbway.com/> should work just as well. I only specifically designed these boards with those two manufacturers in mind, so I cannot guarantee compatibility with any other manufacturer.
 
 After uploading the Gerber, BOM, and Pick-and-Place files, JLCPCB can be a bit buggy and sometimes insist they can't find a part even if it's in stock. If this happens, click the Search button and type in the manufacturer or supplier part number from the BOM, then click select. If the component really is out of stock, you will need to locate a comprable replacement.
+
+![cartridge img](cartridge.png)
+![reader img](reader.png)
 
 ### Cartridge board ordering notes
 Ensure the following selections are made when ordering these boards online:
@@ -49,6 +53,8 @@ Below is the minimum order for components you'll need if you are assembling the 
 Due to low supply and/or compatibility, you will need to source the following components separately:
 - [5] 2.54mm pitch 50 pin (2x25) card edge connectors <https://www.aliexpress.us/item/3256802817047324.html?spm=a2g0o.order_list.order_list_main.9.21ef1802FdSqNg&gatewayAdapt=glo2usa>
 - [5] microSD cards, UHS-I Class 10, 32GB or greater <https://www.microcenter.com/product/705002/verbatim-64gb-premium-microsdxc-class-10-uhs-1-flash-memory-card-with-adapter>
+- The 3D prints are designed to use these m2.5 heat set inserts <https://www.amazon.com/dp/B0CS6YVJYD>
+- You will also need round-head m2.5 screws, like these <https://www.amazon.com/KADRICK-1000PCS-Socket-Button-4MM-20MM/dp/B0DRCCSSB7>
 
 ## Labels
 There is space on the front and top of the cartridge shells for labels exactly 3" wide and about 2" tall. There are many ways you can make or order these yourself. I will be using a KODAK Zink sticker printer to print at home: <https://www.amazon.com/dp/B08C72V1LB>
