@@ -39,12 +39,12 @@ Ensure the following selections are made when ordering these boards online:
 ### Required Bill-of-Materials
 The following components will need to be purchased separately even if you pay for PCB Assembly.
 
-| Quantity | Part                                            | Link                                                                                                                                     |
-| ----------| -------------------------------------------------| ------------------------------------------------------------------------------------------------------------------------------------------|
-| 5        | 2.54mm pitch 50-pin (2x25) card edge connectors | [Amazon](https://www.aliexpress.us/item/3256802817047324.htm?spm=a2g0o.order_list.order_list_main.9.21ef1802FdSqNg&gatewayAdapt=glo2usa) |
-| 1        | Set of m2.5 round-head screws                   | [Amazon](https://www.amazon.com/KADRICK-1000PCS-Socket-Button-4MM-20MM/dp/B0DRCCSSB7)                                                    |
-| 1        | Set of m2.5 heat set inserts                    | [Amazon](https://www.amazon.com/dp/B0CS6YVJYD)                                                                                           |
-| 5        | UHS-I Class 10 microSD card, 32GB or greater    | Anywhere                                                                                                                                 |
+| Quantity | Part                                            | Link                                                                                                                                         |
+| ----------| -------------------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------|
+| 5        | 2.54mm pitch 50-pin (2x25) card edge connectors | [AliExpress](https://www.aliexpress.us/item/3256802817047324.htm?spm=a2g0o.order_list.order_list_main.9.21ef1802FdSqNg&gatewayAdapt=glo2usa) |
+| 1        | Set of m2.5 round-head screws                   | [Amazon](https://www.amazon.com/KADRICK-1000PCS-Socket-Button-4MM-20MM/dp/B0DRCCSSB7)                                                        |
+| 1        | Set of m2.5 heat set inserts                    | [Amazon](https://www.amazon.com/dp/B0CS6YVJYD)                                                                                               |
+| 5        | UHS-I Class 10 microSD card, 32GB or greater    | Anywhere                                                                                                                                     |
 
 ### DIY Bill-of-Materials
 Below is the minimum order for components you'll need if you are assembling the boards yourself. This is intended for the minimum 5 cartridges and 5 readers order, but this BOM will accomodate more than that. Component quantity is based on supplier minimum order restrictions at the time of this writing.
@@ -67,40 +67,7 @@ Below is the minimum order for components you'll need if you are assembling the 
 There is space on the front and top of the cartridge shells for labels exactly 3" wide and about 2" tall. There are many ways you can make or order these yourself. I will be using a KODAK Zink sticker printer to print at home: <https://www.amazon.com/dp/B08C72V1LB>
 
 ## Compatibility and Usage
-PCarts are known to be compatible with Windows and Linux. Apple Mac computers have not been tested but should be compatible.
-
-### Formatting
-The microSD cards can be formatted to your required filesystem before *or* after being inserted into a PCart.
-- Windows/Mac: Please refer to this WikiHow guide for formatting the microSD cards <https://www.wikihow.com/Format-a-Micro-SD-Card> 
-- Linux: Please refer to this guide for formatting the microSD cards <https://www.geeksforgeeks.org/linux-unix/how-to-format-usb-drives-on-linux/>
-
-### Using with Kazeta
-Kazeta is a cartridge-based gaming OS for PC <https://kazeta.org/>. It is a complete Linux operating system with retro-inspired features and runs any portable DRM-free software on specifically formated cartridges. Please see their website and Github Wiki for more details.
-
-**Kazeta requires cartridges to be formated to the ext4 filesystem.** You may need Linux or a third-party Windows application to achieve this.
-I recommend using the-outcaster's kzi generator from github <https://github.com/the-outcaster/kzi-cartridge-generator> for easily creating cartridge data for Kazeta.
-
-### Using with Steam
-LewdM3at created a script <https://github.com/LewdM3at/Steam-Games-Cartridges> for running Steam games off cartridges. It was originally intended for use with SSD's in an external Sata-to-USB adapter, but is compatible with the PCart system. Check out his Reddit post for more info: <https://www.reddit.com/r/pcmasterrace/comments/1ux13ui/steam_game_cartridges/>
-
-### Using with RetroPie
-You can use PCarts to hold one or more game roms, or the entire RetroPie installation.
-
-To use as rom(s) cartridge:
-1. Format the microSD card to Fat32 (may appear as vfat on Linux).
-2. Copy all the contents of /home/pi/RetroPie into the root of the microSD card.
-3. Place whichever roms or bios files you need into the appropriate folders on the microSD card.
-4. In RetroPie, enter the RetroPie Setup and disable the optional package 'usbromservice'.
-5. In RetroPie, add the following line to the bottom of /etc/fstab: `/dev/sda1  /home/pi/RetroPie   vfat    nofail,user,uid=pi,gid=pi   0   2`
-    **Note: this may fail if you have any other USB flashdrive or NVME drive installed when the system boots.**
-6. Insert the PCart into the reader slot before turning on the system.
-On boot, the system will automatically load the cartridge files into `/home/pi/RetroPie` and appear in the EmulationStation menu. **Note: This will hide any other files located at `/home/pi/RetroPie`, including files loaded over the network if using `/etc/fstab` to load files from a Samba share. You cannot map multiple sources to the same location as only one will appear.**
-
-To use as a RetroPie system card:
-1. Use the official Raspberry Pi Imager tool to format a microSD card with a RetroPie installation. Then place the card inside a PCart.
-2. On Raspberry Pi 4 or 5, boot-from-USB is automatically supported. Either leave the microSD card slot on the Pi empty or edit the Pi's boot order priority so USB devices are booted first.
-3. Insert the PCart into the reader slot before turning on the system.
-From here, you can put all your roms and bios on the cartridge as well, or load them over the network.
+PCarts are known to be compatible with Windows and Linux. Apple Mac computers have not been tested but should be compatible. PCarts can be used as general-purpose USB flashdrives to store any data, or for more specific gaming use cases. For more information on compatibility and usage, please [check the wiki](https://github.com/carlgoshert/PC_Cartridge_System/wiki).
 
 -----
 Copyright Carl Goshert 2026.
