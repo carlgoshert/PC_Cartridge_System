@@ -39,12 +39,12 @@ Ensure the following selections are made when ordering these boards online:
 ### Required Bill-of-Materials
 The following components will need to be purchased separately even if you pay for PCB Assembly.
 
-| Quantity | Part                                            | Link                                                                                                                                         |
-| ----------| -------------------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------|
-| 5        | 2.54mm pitch 50-pin (2x25) card edge connectors | [AliExpress](https://www.aliexpress.us/item/3256802817047324.htm?spm=a2g0o.order_list.order_list_main.9.21ef1802FdSqNg&gatewayAdapt=glo2usa) |
-| 1        | Set of m2.5 round-head screws                   | [Amazon](https://www.amazon.com/KADRICK-1000PCS-Socket-Button-4MM-20MM/dp/B0DRCCSSB7)                                                        |
-| 1        | Set of m2.5 heat set inserts                    | [Amazon](https://www.amazon.com/dp/B0CS6YVJYD)                                                                                               |
-| 5        | UHS-I Class 10 microSD card, 32GB or greater    | Anywhere                                                                                                                                     |
+| Quantity | Part                                            | Link                                                                                  |
+| ----------| -------------------------------------------------| ---------------------------------------------------------------------------------------|
+| 5        | 2.54mm pitch 50-pin (2x25) card edge connectors | [AliExpress](https://www.aliexpress.us/item/3256802817047324.html)                    |
+| 1        | Set of m2.5 round-head screws                   | [Amazon](https://www.amazon.com/KADRICK-1000PCS-Socket-Button-4MM-20MM/dp/B0DRCCSSB7) |
+| 1        | Set of m2.5 heat set inserts                    | [Amazon](https://www.amazon.com/dp/B0CS6YVJYD)                                        |
+| 5        | UHS-I Class 10 microSD card                     | Anywhere                                                                              |
 
 ### DIY Bill-of-Materials
 Below is the minimum order for components you'll need if you are assembling the boards yourself. This is intended for the minimum 5 cartridges and 5 readers order, but this BOM will accomodate more than that. Component quantity is based on supplier minimum order restrictions at the time of this writing.
